@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - project Bootstrap Template</title>
+  <title>Fly Data</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,51 +41,89 @@
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Stian Haveland</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://x.com/StianH05" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/stian.byrkneshaveland" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/byrkneshaveland/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a><i class="bx bxl"></i></a>
           <a href="https://www.linkedin.com/in/stian-byrknes-haveland-47299128a/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Stianh05" class="github"><i class="bx bxl-github"></i></a>
+          <a><i class="bx bxl"></i></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#project" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>project</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="" onclick="goBack()"><i class="bx bx-home"></i> <span>Home</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
+      
+      
     </div>
   </header><!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+          <h2>Fly Data</h2>
+          <ol>            
+            <li><a href="" onclick="goBack()">Home</a></li>
+            <li>Fly Data</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
+    <!-- ======= project Details Section ======= -->
+    <section id="project-details" class="project-details">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="project-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/project/FlyData/FlyData1.png">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/project/FlyData/FlyData2.png">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="project-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: Fly Data</li>
+                <li><strong>Project date</strong>: 20 November, 2023</li>
+                <li><strong>Project URL</strong>: <a href="https://stianh05.github.io/flydata/">https://stianh05.github.io/flydata</a></li>
+                <li><strong>Project Code</strong>: <a href="https://github.com/Stianh05/flydata">https://github.com/flydata</a></li>
+              </ul>
+            </div>
+            <div class="project-description">
+              <h2>Website for Fly Data</h2>
+              <p>
+                This website is designed to provide real-time information on flights departing from Bergen Airport, Flesland (BGO). It retrieves data from Avinor’s API, converting it from XML to JSON for a user-friendly experience. Visitors can view details of each departing flight, including airline name, flight number, scheduled departure time and destination airport.
+              </p>
+              <p>
+                The site is tailored for travelers, families, and anyone who wants to track Bergen's departing flights. With clear mappings for both airline and airport codes to full names, it simplifies aviation data for easy access and understanding.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-    </section>
+    </section><!-- End project Details Section -->
 
   </main><!-- End #main -->
 
@@ -120,7 +158,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+ 
+  <!-- goBack function -->
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </body>
 
 </html>
