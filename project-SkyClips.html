@@ -157,11 +157,16 @@
   <script src="assets/js/main.js"></script>
  
   <!-- goBack function -->
-  <script>
-    function goBack() {
-      window.history.back();
-    }
-  </script>
+<script>
+function goBack() {
+  if (document.referrer) {
+    window.history.back();
+  } else {
+    window.location.href = "https://stianhaveland.netlify.app/";
+  }
+}
+</script>
 </body>
+
 
 </html>
